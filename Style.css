@@ -1,0 +1,78 @@
+body {
+    background-color: #a78365; /*ფონის ღია კრემისფერი */
+    display: flex;             /* იყენებს Flexbox-ს ცენტრირებისთვის */
+    justify-content: center;   /* ცენტრავს ჰორიზონტალურად */
+    align-items: center;       /* ცენტრავს ვერტიკალურად */
+    margin: 100px;                 /* არ აქვს შიდა შუალედი */
+    /* min-height: 200vh;         იკავებს ეკრანის მთლიან სიმაღლეს */
+}
+.card {
+    background-color: #eae4e4; /*თეთრი ფონი */
+    border-radius: 10px;    /*კუთხეების მრგვალი ფორმა */
+    display: flex;          /* იყენებს Flexbox-ს */
+    flex-direction: row;    /* ელემენტები განლაგებულია რიგში */
+}
+.card-image {
+ display: flex;
+}
+.card-image img {
+    width: 100%;              /* სურათის სიგანე */
+    height: 100%;             /* სურათის სიმაღლე */
+    border-top-left-radius: 10px;  /*მარცხენა ზედა კუთხის მრგვალი ფორმა */
+    border-bottom-left-radius: 10px;  /* მარცხენა ქვედა კუთხის მრგვალი ფორმა */
+}
+.card-content {
+  display: flex;
+  margin: 0px; /* გარე შუალედი */
+  
+  flex-direction: column;
+  justify-content: space-between; /* ელემენტებს თანაბრად ანაწილებს ვერტიკალურად */
+}
+ .category {
+    font-size: 14px;          /* სათაურის ზომა */
+    padding: 40px;     /* ქვედა დაშორება */
+    font-style: italic;       /* ტექსტის სქელი */
+    margin-top: 10px;     /* ქვედა დაშორება */
+}
+.product-title {
+    font-size: 38px;          /* პროდუქტის სათაურის ზომა */
+    font-weight: bold;        /* ტექსტის სქელი */
+    padding-right: 30px;      /* ქვედა დაშორება */
+    padding-left: 30px;     /* ქვედა დაშორება */
+}
+.product-description {
+    font-size: 18px;          /* პროდუქტის აღწერის ზომა */
+    padding-right: 30px;      /* ქვედა დაშორება */
+    padding-left: 30px;     /* ქვედა დაშორება */
+    color: #6c6c6c;           /* ტექსტის ფერი */
+}
+.price-container {
+  display: flex;
+  align-items: center; /* ცენტრავს ფასებს ერთ ხაზზე */
+  gap: 20px;           /* დაშორება ორ ფასს შორის */
+  margin-bottom: 20px;
+   padding-right: 30px;      /* ქვედა დაშორება */
+    padding-left: 30px;     /* ქვედა დაშორება */
+}
+.current-price {
+  font-size: 32px;
+  font-weight: bold;
+  color: #3d8168; /* მუქი მწვანე ფერი */
+}
+.original-price {
+  font-size: 13px;
+  color: #6c7289;
+  text-decoration: line-through; /* გადახაზული ტექსტი */
+}
+.add-to-cart {
+  background-color: #3d8168; /* ღია მწვანე ფერი */
+  color: white;              /* ტექსტის ფერი */
+  border: none;              /* არ აქვს საზღვარი */
+  border-radius: 5px;        /* კუთხეების მრგვალი ფორმა */
+  padding: 15px 30px;        /* შიდა შუალედი */
+  font-size: 16px;           /* ტექსტის ზომა */
+  cursor: pointer;           /* მაუსის კურსორი */
+  margin: 20px;
+   padding-right: 30px;      /* ქვედა დაშორება */
+    padding-left: 30px;     /* ქვედა დაშორება */
+}

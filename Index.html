@@ -4,10 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css"> <!-- css მისაბმელი ბრძანება -->
+    <link rel="stylesheet" href="Style.css"> <!-- css მისაბმელი ბრძანება -->
 
 </head>
 <body>
-    gamarjobaaa
+
+<!-- მთავარი კონტეინერი, რომელიც ფარავს მთლიან ბარათს -->
+<main class="card"> 
+       
+    <!-- მარცხენა მხარე: პროდუქტის ფოტო -->   
+    <div class="card-image">
+        <img src="images/image-product-desktop.jpg" alt="Perfume-IMG">
+    </div>
+
+    <!-- მარჯვენა მხარე: ტექსტური ინფორმაცია -->
+    <div class="card-content">
+        <!-- კატეგორია -->
+        <p class="category">PERFUME</p>
+            <!-- პროდუქტის დასახელება -->
+            <h1 class="product-title">Gabrielle Essence Eau De Parfum</h1>
+                <p class="product-description">
+                    A floral, light, and airy fragrance that captures the essence of a summer day.
+                </p>
+                  <!-- ფასების ბლოკი -->
+                    <div class="price-container">
+                        <span class="current-price">$149.99</span>
+                        <span class="original-price">$169.99</span>
+                    </div>
+
+                    <button class="add-to-cart"> <img src="images/icon-cart.svg" alt="Cart"> Add to Cart</button>    
+    </div>
+  
+</main>
+
 </body>
 </html>
